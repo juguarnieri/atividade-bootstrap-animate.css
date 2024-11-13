@@ -1,0 +1,61 @@
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    background-color: #D9534F;
+    border-color: #D9534F;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #C9302C;
+    border-color: #C9302C;
+}
+
+.btn-outline-primary {
+    font-weight: bold;
+}
+
+/* Adicionando duas animações: fadeIn e bounce */
+.card {
+    animation: fadeInAnimation 3s ease-in-out, bounceAnimation 2s ease-in-out;
+    animation-delay: 0.5s; /* Atrasa o início de ambas as animações */
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Fade In: aparecendo gradualmente */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Bounce: pulo no elemento */
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card */
+}
