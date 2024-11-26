@@ -28,18 +28,18 @@
     font-weight: bold;
 }
 .card-title {
-    margin-bottom: 20px; /* Maior espaçamento abaixo do título */
-    font-size: 1.5rem; /* Ajuste opcional para o tamanho do título */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .card-text {
-    margin-bottom: 8px; /* Menor espaçamento entre os parágrafos */
-    font-size: 1rem; /* Ajuste opcional para o tamanho do texto */
+    margin-bottom: 8px; 
+    font-size: 1rem;
 }
 /* Adicionando duas animações: fadeIn e bounce */
 .card {
     animation: fadeInAnimation 3s ease-in-out, bounceAnimation 2s ease-in-out;
-    animation-delay: 0.5s; /* Atrasa o início de ambas as animações */
+    animation-delay: 0.5s; 
     transition: transform 0.3s ease-in-out; 
 }
 .card-body {
@@ -78,5 +78,5 @@
     }
 }
 .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card */
+    transform: scale(1.05); 
 }
